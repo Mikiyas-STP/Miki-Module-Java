@@ -7,11 +7,14 @@
 //Create a private Java method to reverse numbers
 //Call this method from a Main method
 
+
 public class Main{
     public static void main(String[] args){
         System.out.println(reverseNum(3956));
     }
-
+    /**
+     * Reverses a given integer number
+     */
     private static int reverseNum(int number){
         int reversed = 0;
 
