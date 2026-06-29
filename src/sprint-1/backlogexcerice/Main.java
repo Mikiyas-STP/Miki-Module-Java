@@ -8,6 +8,24 @@
 
 public class Main {
 
+    public static void main(String[] args) {
+        primePrinter(1000);
+    }
+
+    /**
+     * Prints all prime numbers from 2 up to value.
+     */
+    private static void primePrinter(int value) {
+        for (int i = 2; i < value; i++) {
+            if (isPrime(i)) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    /**
+     * Check if a number is prime.
+     */
     private static boolean isPrime(int n) {
         for (int i = 2; i * i <= n; i++) {
             if (n % i == 0) {
