@@ -7,3 +7,18 @@
 //Create a private Java method to reverse numbers
 //Call this method from a Main method
 
+public class Main{
+    public static void main(String[] args){
+        System.out.println(reverseNum(3956));
+    }
+
+    private static int reverseNum(int number){
+        int reversed = 0;
+
+        while (number > 0){
+            reversed = reversed * 10 + number % 10;
+            number = number / 10;
+        }
+        return reversed;
+    }
+}
