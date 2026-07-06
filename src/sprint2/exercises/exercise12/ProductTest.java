@@ -1,4 +1,4 @@
-package sprint2.exercises.exercise2;
+package sprint2.exercises.exercise12;
 //Exercise 1.2 - Reference Behaviour
 //Starting with the following in your main method:
 //Product p1 = new Product("Laptop", 900);
