@@ -1,19 +1,11 @@
-package sprint2.exercises.exercise1;
-//Exercise 1.1 - Product Class
+package sprint2.exercises.exercise11;
 //Create a Product class with:
-//
 //Fields: name, price, stockCount
-//
 //Getters and setters for each field
-//
 //A toString method that includes each of the fields
-//
 //Two constructors:
-//
 //Name and price only, defaulting stockCount to 0
-//
 //Name, price and stock
-//
 //Create several products and print them, then modify your first constructor so that it takes advantage of constructor chaining.
 
 public class Product {
@@ -38,11 +30,9 @@ public class Product {
     public String getName() {
         return name;
     }
-
     public double getPrice() {
         return price;
     }
-
     public int getStockCount() {
         return stockCount;
     }
@@ -51,11 +41,9 @@ public class Product {
     public void setName(String name) {
         this.name = name;
     }
-
     public void setPrice(double price) {
         this.price = price;
     }
-
     public void setStockCount(int stockCount) {
         this.stockCount = stockCount;
     }
