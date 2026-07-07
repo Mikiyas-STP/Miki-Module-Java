@@ -4,6 +4,7 @@ class Animal {
         this.name = name;
     }
     public String getName() {
+
         return name;
     }
 }
@@ -12,7 +13,7 @@ class Dog extends Animal {
         super(name);
     }
     public void bark() {
-        System.out.println(getName() + " says Woof!");
+        System.out.println(getName() + " is barking!");
     }
 }
 
@@ -30,7 +31,7 @@ class Parrot extends Animal {
         super(name);
     }
     public void squak() {
-        System.out.println(getName() + " says Squawk!");
+        System.out.println(getName() + " is saying Squawk Squawk Squawk!");
     }
 }
 
