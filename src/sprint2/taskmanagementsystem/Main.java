@@ -1,3 +1,5 @@
+import java.util.Date;
+
 class Task{
     private final int id;
     private String description;
@@ -22,3 +24,11 @@ class Task{
     }
 }
 
+class TimedTask extends Task{
+    private Date deadline;
+
+}
+class PriorityTask extends Task{
+    private String priority;
+
+}
