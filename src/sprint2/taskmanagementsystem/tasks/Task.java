@@ -22,5 +22,32 @@ public class Task {
         System.out.println("Task " + id + " is completed successfully");
     }
 
+    public String getStatus(){
+        if(completed){
+            return "completed";
+        }
+        else{
+            return "Not completed";
+        }
+
+    }
+
+    public int getId(){
+        return id;
+    }
+    public String getDescription(){
+       return description;
+    }
+    public void setDescription(String description){
+        if(description == null || description.isBlank()){
+            System.out.println("Description cannot be empty");
+            return;
+        }
+        this.description = description;
+    }
+
+    public boolean isCompleted(){
+        return completed;
+    }
 
 }
