@@ -13,4 +13,14 @@ public class Task {
         this.description = description;
         this.completed = false;
     }
+    public void complete(){
+        if(completed){
+            System.out.println("Task" + id + "is completed.");
+            return;
+        }
+        completed = true;
+        System.out.println("Task " + id + " is completed successfully");
+    }
+
+
 }
