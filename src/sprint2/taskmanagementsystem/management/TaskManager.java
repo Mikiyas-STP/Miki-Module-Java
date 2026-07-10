@@ -70,4 +70,13 @@ public class TaskManager {
 
         return result;
     }
+
+    public Task[] getAllTasks(){
+        Task[] allTasks = new Task[taskCount];
+
+        for(int i = 0; i< taskCount; i++){
+            allTasks[i] = tasks[i];
+        }
+        return allTasks;
+    }
 }
