@@ -10,4 +10,12 @@ public class TimedTask extends Task {
         this.deadline = deadline;
     }
 
+    @Override
+    public String getStatus(){
+        return super.getStatus() + " Deadline:" + deadline;
+    }
+
+    public LocalDate getDeadline() {
+        return deadline;
+    }
 }
