@@ -18,4 +18,14 @@ public class TaskManager {
         taskCount++;
     }
 
+    public void completeTask(int id){
+        for (int i = 0; i < taskCount; i++){
+            if(task[i].getId() == id){
+                tasks[i].complete();
+                return;
+            }
+        }
+        System.out.println("Task with ID" + id + " not found,");
+    }
+
 }
