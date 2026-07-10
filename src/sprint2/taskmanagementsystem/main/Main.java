@@ -21,6 +21,8 @@ public class Main {
 
         //printing summarise
         Task[] completedTasks = manager.getTasksByStatus(true);
-
+        for(Task task : completedTasks){
+            System.out.println("This task is ID: " + task.getId() + " Description: " + task.getDescription() + " Type: " + task.getClass().getSimpleName() + " Status: " + task.getStatus() );
+        }
     }
 }
