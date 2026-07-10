@@ -1,10 +1,11 @@
 package sprint2.taskmanagementsystem.tasks;
 
 public class Task {
+//Note for me: no one can directly modify this fields this is what is called encapsulation.
     private final int id;
     private String description;
     private boolean completed;
-
+//I have used static id generator for increment, this can be used inside all my objects. and only one copy exist for the whole class.
     private static int nextId = 1;
 
     public Task(String description){
@@ -38,6 +39,7 @@ public class Task {
     public String getDescription(){
        return description;
     }
+    //I check if description exist if it doesnt exist I print can't be empty message then set description
     public void setDescription(String description){
         if(description == null || description.isBlank()){
             System.out.println("Description cannot be empty");
