@@ -16,5 +16,9 @@ public class Main {
         manager.addTask(task2);
         manager.addTask(task3);
 
+        //i will complete task 3
+        manager.completeTask(3);
+
+
     }
 }
