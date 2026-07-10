@@ -27,6 +27,8 @@ public class Main {
             System.out.println("ID: " + task.getId() + " Description: " + task.getDescription() + " Type: " + task.getClass().getSimpleName() + " Status: " + task.getStatus() );
         }
         //for all tasks
+        System.out.println("       " +
+                "ALL TASKS DETAILS");
         for(Task task : allTasks){
             System.out.println("ID: " + task.getId() + " Description: " + task.getDescription() + " Type: " + task.getClass().getSimpleName() + " Status: " + task.getStatus() );
         }
