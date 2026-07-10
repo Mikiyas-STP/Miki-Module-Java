@@ -5,17 +5,15 @@
 //Create a private Java method to print all prime numbers up to 1000
 //Call this method from a Main method
 
-
 public class Main {
 
     public static void main(String[] args) {
-        primePrinter(1000);
+        printPrimes(1000);
     }
-
     /**
      * Prints all prime numbers from 2 up to value.
      */
-    private static void primePrinter(int value) {
+    private static void printPrimes(int value) {
         for (int i = 2; i < value; i++) {
             if (isPrime(i)) {
                 System.out.println(i);
