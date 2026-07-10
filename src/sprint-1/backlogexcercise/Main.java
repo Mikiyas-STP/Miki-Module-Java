@@ -17,11 +17,21 @@ public class Main{
      */
     private static int reverseNum(int number){
 
+        //checking if my number is negative if it is I change it to positive for simpler calclulation
+        boolean isNegative = number < 0;
+        if (isNegative){
+            number = -number;
+        }
+
         int reversed = 0;
 
         while (number > 0){
             reversed = reversed * 10 + number % 10;
             number = number / 10;
+        }
+        //here if the number were negative i should add the sign back and used this simple technique
+        if(isNegative){
+            reversed = - reversed;
         }
 
         return reversed;
