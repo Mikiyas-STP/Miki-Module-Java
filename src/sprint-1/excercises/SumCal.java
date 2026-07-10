@@ -14,7 +14,6 @@ public class SumCal {
      * @param num2 the second integer
      * @return the sum of num1 and num2
      */
-
     private static int calculateSum(int num1, int num2) {
         return num1 + num2;
     }
