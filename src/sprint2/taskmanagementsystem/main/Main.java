@@ -19,6 +19,8 @@ public class Main {
         //i will complete task 3
         manager.completeTask(3);
 
+        //printing summarise
+        Task[] completedTasks = manager.getTasksByStatus(true);
 
     }
 }
