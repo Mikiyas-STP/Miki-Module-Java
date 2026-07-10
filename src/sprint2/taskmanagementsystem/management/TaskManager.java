@@ -1,31 +1,73 @@
 package sprint2.taskmanagementsystem.management;
-import sprint2.taskmanagementsystem.tasks.Task
+
+import sprint2.taskmanagementsystem.tasks.Task;
+
 public class TaskManager {
+
     private final Task[] tasks;
     private int taskCount;
 
-    public TaskManager(){
+
+    public TaskManager() {
         tasks = new Task[10];
         taskCount = 0;
     }
 
-    public void addTask(Task task){
-        if(taskCount >= tasks.length){
-            System.out.println("Task limit reached");
+
+    public void addTask(Task task) {
+
+        if (taskCount >= tasks.length) {
+            System.out.println("Task limit reached.");
             return;
         }
+
         tasks[taskCount] = task;
         taskCount++;
     }
 
-    public void completeTask(int id){
-        for (int i = 0; i < taskCount; i++){
-            if(task[i].getId() == id){
+
+    public void completeTask(int id) {
+
+        for (int i = 0; i < taskCount; i++) {
+
+            if (tasks[i].getId() == id) {
+
                 tasks[i].complete();
                 return;
+
             }
         }
-        System.out.println("Task with ID" + id + " not found,");
+
+        System.out.println("Task not found.");
     }
 
+
+    public Task[] getTasksByStatus(boolean completed) {
+
+        int count = 0;
+
+        for (int i = 0; i < taskCount; i++) {
+
+            if (tasks[i].isCompleted() == completed) {
+                count++;
+            }
+        }
+
+
+        Task[] result = new Task[count];
+
+        int index = 0;
+
+        for (int i = 0; i < taskCount; i++) {
+
+            if (tasks[i].isCompleted() == completed) {
+
+                result[index] = tasks[i];
+                index++;
+
+            }
+        }
+
+        return result;
+    }
 }
