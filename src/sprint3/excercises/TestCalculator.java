@@ -24,5 +24,10 @@ class CalculatorTest {
     }
 
     @Test
-    void testDivideByZeroThrows() {}
+    void testDivideByZeroThrows() {
+        assertThrows(
+                IllegalArgumentException.class,
+                () -> calculator.divide(10, 0)
+        );
+    }
 }
