@@ -12,7 +12,10 @@ class CalculatorTest {
     }
 
     @Test
-    void testAdd() {}
+    void testAdd() {
+        int result = calculator.add(2, 3);
+        assertEquals(5, result);
+    }
 
     @Test
     void testDivide() {}
