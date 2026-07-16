@@ -18,7 +18,10 @@ class CalculatorTest {
     }
 
     @Test
-    void testDivide() {}
+    void testDivide() {
+        int result = calculator.divide(10, 2);
+        assertEquals(5, result);
+    }
 
     @Test
     void testDivideByZeroThrows() {}
