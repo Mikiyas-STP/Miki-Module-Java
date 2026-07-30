@@ -46,7 +46,9 @@ class StringUtilitiesTest {
         );
     }
 
-
+    /**
+     * Verifies that a comma-separated string is split into the expected list of values.
+     */
     @Test
     void shouldSplitCommaSeparatedLine() {
 
