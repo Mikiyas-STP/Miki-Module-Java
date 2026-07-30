@@ -7,15 +7,27 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * to test the behavior of string utilities class
+ */
 class StringUtilitiesTest {
 
     private StringUtilities stringUtilities;
 
+    /**
+     * Creates an stringutilities instance before each test
+     */
     @BeforeEach
     void setUp() {
         stringUtilities = new StringUtilities();
     }
 
+    /**
+     * To verify if isPalindrom correctly identifies both palindromic
+     * of non palindromic strings.
+     * @param input the string being tested
+     * @param expected the expected palindrom result
+     */
     @ParameterizedTest(name = "\"{0}\" should return {1}")
     @CsvSource({
             "level, true",
@@ -33,6 +45,7 @@ class StringUtilitiesTest {
                 stringUtilities.isPalindrome(input)
         );
     }
+
 
     @Test
     void shouldSplitCommaSeparatedLine() {
