@@ -20,7 +20,7 @@ class StringUtilitiesTestNew {
     @ParameterizedTest(name = "\"{0}\" should return {1}")
     @CsvSource({
             "level, true",
-            "racecar, true",
+            "racecar, true",a
             "hello, false",
             "a, true",
             "ab, false"
