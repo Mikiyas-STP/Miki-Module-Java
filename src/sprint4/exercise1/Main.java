@@ -15,4 +15,16 @@ public class EmailStatementSender implements StatementSender {
     }
 }
 
+public class LetterStatementSender implements StatementSender {
+    @Override
+    public void sendStatement (String statementContent){
+        System.out.println("Success: Letter printed and posted with content -> " + statementContent);
+    }
+}
+
+public class StatementDeliveryService {
+    public void deliverStatement (String statementContent, StatementSender statementSender){
+        statementSender.sendStatement(statementContent);
+    }
+}
 
