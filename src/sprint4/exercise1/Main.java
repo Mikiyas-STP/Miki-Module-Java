@@ -1,30 +1,13 @@
 package sprint4.exercise1;
-public interface StatementSender {
 
-    /**
-     * sends the statement to the customer
-     * @param statementContent this is the text of the bank statement
-     */
-    void sendStatement(String statementContent);
-}
+public class Main{
+    public static void main(String[] args){
+        StatementDeliveryService deliveryService = new StatementDeliveryService();
+        StatementSender emailSender = new EmailStatementSender();
+        StatementSender letterSender = new LetterStatementSender();
 
-public class EmailStatementSender implements StatementSender {
-    @Override
-    public void sendStatement (String statementContent){
-        System.out.println("Success: Email sent with content -> " + statementContent);
+        String myStatement = "Your account balance is £1,500.00";
+        deliveryService.deliverStatement(myStatement, emailSender);
+        deliveryService.deliverStatement(myStatement, letterSender);
     }
 }
-
-public class LetterStatementSender implements StatementSender {
-    @Override
-    public void sendStatement (String statementContent){
-        System.out.println("Success: Letter printed and posted with content -> " + statementContent);
-    }
-}
-
-public class StatementDeliveryService {
-    public void deliverStatement (String statementContent, StatementSender statementSender){
-        statementSender.sendStatement(statementContent);
-    }
-}
-
