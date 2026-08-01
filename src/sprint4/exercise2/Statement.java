@@ -8,7 +8,7 @@ public interface Statement {
     /**
      * this gets the text containing list of transaction
      */
-    String getTransactionList();
+    String getTransactionsList();
 
     /**
      * gets the statement period
