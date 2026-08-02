@@ -14,5 +14,15 @@ public class StudentDataProcessor {
         this.grades = grades;
     }
 
+    public Map<Student, Integer> getStudentToGrade(){
+        Map<Student, Integer> studentGrades = new HashMap<>();
+        for (int i = 0; i < firstNames.length; i++) {
+            Student student = new Student(firstNames[i], lastNames[i] );
+            studentGrades.put(student, grades[i]);
+
+        }
+        return studentGrades;
+    }
+
 
 }
