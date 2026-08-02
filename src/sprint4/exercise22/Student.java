@@ -8,10 +8,10 @@ public class Student {
         this.firstName = firstName;
         this.lastName = lastName;
 
-        public String getFirstName(){
+        public String getFirstName() {
             return firstName;
         }
-        public String getLastName(){
+        public String getLastName() {
             return lastName;
         }
 
