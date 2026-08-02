@@ -1,5 +1,4 @@
 package sprint4.exercise23;
-import sprint4.exercise22.*;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -21,8 +20,5 @@ public class Main {
         Set<String> sortedNames = processor.getDistinctFirstNamesInAlphabeticalOrder();
         Map<Student, Integer> students = processor.getStudentToGrade();
 
-
-
     }
-
 }
